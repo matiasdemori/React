@@ -1,20 +1,36 @@
+import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link, NavLink } from 'react-router-dom';
 import './Nabvar.scss';
 
 const Nabvar = () => {
-    return (
-        <header>
-            <h1>Magic The Gathering</h1>
-            <ul>
-                <li>Azules</li>
-                <li>Negras</li>
-                <li>Blancas</li>
-                <li>Rojas</li>
-                <li>Verdes</li>
-            </ul>
-            <CartWidget/>
-        </header>
-    )
+  return (
+    <header className="nav-header">
+      <Link to="/">
+        <h1>Magic The Gathering</h1>
+      </Link>
+      <nav>
+        <ul>
+          <li className="azul">
+            <NavLink to="/categoria/azul">Azules</NavLink>
+          </li>
+          <li className="negro">
+            <NavLink to="/categoria/Negro">Negras</NavLink>
+          </li>
+          <li className="blanco">
+            <NavLink to="/categoria/Blanco">Blancas</NavLink>
+          </li>
+          <li className="rojo">
+            <NavLink to="/categoria/Rojo">Rojas</NavLink>
+          </li>
+          <li className="verde">
+            <NavLink to="/categoria/Verde">Verdes</NavLink>
+          </li>
+        </ul>
+        <CartWidget />
+      </nav>
+    </header>
+  );
 }
 
-export default Nabvar
+export default Nabvar;
