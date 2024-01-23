@@ -1,4 +1,3 @@
-import React from 'react';
 import Item from '../Item/Item';
 import './ItemList.scss';
 
@@ -19,3 +18,4 @@ const ItemList = ({ productos }) => {
 }
 
 export default ItemList;
+

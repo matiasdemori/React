@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
   font-family: 'Arial', sans-serif;
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
 }
 
 nav-header {
@@ -50,6 +56,7 @@ nav-header {
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
+    align-items: center;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
@@ -63,23 +70,26 @@ nav-header {
     }
 
     .item-details {
-      padding: 15px;
+      padding: 5px;
 
       h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 7px;
+        font-weight: bold;
       }
 
       p {
-        font-size: 16px;
-        color: #555;
+        font-size: 18px;
+        color: black;
         margin-bottom: 8px;
+        text-align: center;
       }
 
       .details-link {
         display: block;
-        color: #007bff;
+        color: wheat;
         text-decoration: none;
+        font-weight: bold;
 
         &:hover {
           text-decoration: underline;

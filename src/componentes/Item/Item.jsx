@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Item.scss';
 
@@ -20,3 +19,4 @@ const Item = ({ id, nombre, img, stock, precio }) => {
 }
 
 export default Item;
+

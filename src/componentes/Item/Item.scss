@@ -3,6 +3,7 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
+  align-items: center;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
@@ -31,7 +32,7 @@
 
     .details-link {
       display: block;
-      color: #007bff;
+      color: black;
       text-decoration: none;
 
       &:hover {

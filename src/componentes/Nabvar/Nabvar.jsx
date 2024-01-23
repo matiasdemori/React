@@ -6,19 +6,19 @@ import './Nabvar.scss';
 const Nabvar = () => {
   return (
     <header className="nav-header">
-      <Link to="/">
+      <Link className='link' to="/">
         <h1>Magic The Gathering</h1>
       </Link>
       <nav>
         <ul>
+          <li className="blanco">
+            <NavLink to="/categoria/Blanco">Blancas</NavLink>
+          </li>
           <li className="azul">
-            <NavLink to="/categoria/azul">Azules</NavLink>
+            <NavLink to="/categoria/Azul">Azules</NavLink>
           </li>
           <li className="negro">
             <NavLink to="/categoria/Negro">Negras</NavLink>
-          </li>
-          <li className="blanco">
-            <NavLink to="/categoria/Blanco">Blancas</NavLink>
           </li>
           <li className="rojo">
             <NavLink to="/categoria/Rojo">Rojas</NavLink>
