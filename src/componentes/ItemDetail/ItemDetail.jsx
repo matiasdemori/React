@@ -24,17 +24,29 @@ const ItemDetail = ({ id, nombre, img, stock, precio }) => {
           <h2>{nombre}</h2>
           <p>Precio: {precio}</p>
           <p>Stock: {stock}</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+            amet, quasi, repellendus dolore accusamus necessitatibus harum
+            maiores adipisci, aperiam deleniti facere vel maxime tempore
+            voluptatibus odit reiciendis corporis labore fuga!
+          </p>
         </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam amet,
-          quasi, repellendus dolore accusamus necessitatibus harum maiores
-          adipisci, aperiam deleniti facere vel maxime tempore voluptatibus odit
-          reiciendis corporis labore fuga!
-        </p>
-        {agregarCantidad > 0 ? (<Link to="/cart">Terminar Compra</Link>) : (<Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)}
+        {stock > 0 && (
+          <>
+            {agregarCantidad > 0 ? (
+              <Link to="/cart">Terminar Compra</Link>
+            ) : (
+              <Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />
+            )}
+          </>
+        )}
+        {stock === 0 && (
+          <p className="Sin-Stock">Por el momento no hay stock disponible.</p>
+        )}
       </div>
     </div>
   );
 };
 
 export default ItemDetail;
+
