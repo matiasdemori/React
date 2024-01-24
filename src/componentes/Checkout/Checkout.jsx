@@ -58,6 +58,7 @@ const Checkout = () => {
           .then(docRef => {
             setOrdenId(docRef.id);
             vaciarCarrito();
+            setError(null);
           })
           .catch(error => console.log("Error al crear la orden ", error));
       })
